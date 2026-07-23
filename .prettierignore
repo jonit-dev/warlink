@@ -1,0 +1,5 @@
+apps/desktop/frontend/dist/
+apps/desktop/frontend/wailsjs/
+coverage/
+node_modules/
+pnpm-lock.yaml

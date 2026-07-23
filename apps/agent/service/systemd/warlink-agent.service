@@ -1,0 +1,17 @@
+[Unit]
+Description=WarLink privileged local agent
+After=network-online.target zerotier-one.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/lib/warlink/warlink-agent
+Restart=on-failure
+RestartSec=5
+
+# User, group, capabilities, filesystem access, and hardening directives must be
+# finalized with the authenticated IPC and installer slices. This unit is not
+# ready for installation.
+
+[Install]
+WantedBy=multi-user.target

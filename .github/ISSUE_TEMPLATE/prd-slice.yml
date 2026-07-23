@@ -1,0 +1,50 @@
+name: PRD slice
+description: Define one independently deliverable product increment.
+title: "[Slice]: "
+labels:
+  - prd-slice
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: User-visible outcome
+      description: Describe the smallest behavior this slice makes possible.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: In scope
+      description: List the behavior and components included.
+    validations:
+      required: true
+  - type: textarea
+    id: exclusions
+    attributes:
+      label: Explicitly out of scope
+      description: Name adjacent behavior that belongs in later slices.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance evidence
+      description: Use observable Given/When/Then checks where practical.
+      placeholder: |
+        - Given ...
+          When ...
+          Then ...
+    validations:
+      required: true
+  - type: textarea
+    id: security
+    attributes:
+      label: Security and cleanup constraints
+      description: Cover privileges, secrets, logging, retry safety, and cleanup.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and decisions
+      description: Link blocking slices, ADRs, or external validation.

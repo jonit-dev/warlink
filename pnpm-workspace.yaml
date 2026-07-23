@@ -1,0 +1,8 @@
+packages:
+  - apps/desktop/frontend
+  - cloudflare
+  - packages/*
+
+onlyBuiltDependencies:
+  - esbuild
+  - workerd

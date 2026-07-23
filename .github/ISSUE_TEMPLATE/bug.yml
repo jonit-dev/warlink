@@ -1,0 +1,38 @@
+name: Bug report
+description: Report reproducible behavior that differs from an accepted requirement.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Remove secrets, personal data, node IDs, and local paths.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows 10
+        - Windows 11
+        - Ubuntu
+        - Pop!_OS
+        - Cloudflare Workers
+        - Other
+    validations:
+      required: true

@@ -1,0 +1,5 @@
+# Copy to .dev.vars and use development-only values.
+# Never commit .dev.vars or real credentials.
+ZEROTIER_API_TOKEN=
+CONTROL_PLANE_SIGNING_KEY=
+OWNER_ENROLLMENT_SECRET=

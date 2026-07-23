@@ -1,0 +1,36 @@
+# JavaScript
+node_modules/
+dist/
+!apps/desktop/frontend/dist/
+apps/desktop/frontend/dist/*
+!apps/desktop/frontend/dist/.gitkeep
+coverage/
+*.tsbuildinfo
+
+# Go
+bin/
+*.exe
+*.test
+*.out
+
+# Wails
+apps/desktop/build/bin/
+apps/desktop/frontend/wailsjs/
+
+# Cloudflare
+.wrangler/
+.dev.vars
+.env
+.env.*
+!.env.example
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local artifacts
+artifacts/
+*.log
+*.zip
